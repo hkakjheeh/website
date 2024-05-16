@@ -11,7 +11,7 @@ pipeline {
         }
         stage("build") {
             steps {
-                sh "echo 'hello world'"
+                sh "docker build -t imageosnginx:latest"
             }
         }
     }
