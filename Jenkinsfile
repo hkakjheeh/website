@@ -11,7 +11,7 @@ pipeline {
         }
         stage("build") {
             steps {
-                sh "docker build -t imageosnginx:latest"
+                sh "docker build -t imageosnginx:latest ."
             }
         }
     }
